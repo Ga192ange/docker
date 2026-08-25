@@ -70,8 +70,10 @@ services:
     networks:
       - red-cba
 
-  networks:
+networks:
   red-ejemplo-082:
+  red-cba:
 
-  volumes:
+volumes:
   mysql-data:
+  uptime-kuma-data:
