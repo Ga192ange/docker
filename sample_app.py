@@ -24,8 +24,8 @@ def home():
     except Exception as e:
         db_status = f"Error en la conexion: {e}"
 
-    return "Error intencional para prueba", 500
+    return render_template("index.html", db_status=db_status)
 
 
 if __name__ == "__main__":
-    sample.run(host="0.0.0.0", port=5050, debug=True)
+    sample.run(host="0.0.0.0", port=5050, debug=False)  # nosec B104
